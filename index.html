@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Web player: músicas para todas as pessoas.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/spotify.png" type="image/x-icon">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#">
+                <img src="img/spotify.png" alt="Logo Spotify">
+            </a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="fas fa-home"></span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fas fa-search"></span>
+                        <span>Pesquisar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fas fa-book"></span>
+                        <span>Minha Biblioteca</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="playlists">
+            <h3>Playlists</h3>
+            
+            <!-- Tabela para a seção de playlists -->
+            <table class="custom-table">
+                <tr>
+                    <td>
+                        <p style="margin: 0;">Crie sua 1ª playlist, é fácil, vamos te ajudar.</p>
+                        <button class="custom-button">Criar Playlist</button>
+                    </td>
+                </tr>
+            </table>
+        
+            <!-- Tabela para a seção de podcasts -->
+            <table class="custom-table">
+                <tr>
+                    <td>
+                        <p style="margin: 0;">Que tal seguir um podcast novo? Avisaremos você sobre novos episódios.</p>
+                        <button class="custom-button">Explore Podcasts</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <a href="#">Legal</a>
+            <a href="#">Segurança e Centro de privacidade</a>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Cookies</a>
+            <a href="#">Sobre anúncios</a>
+            <a href="#">Acessibilidade</a>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="main-content">
+        <!-- Barra superior com login e pesquisa -->
+        <div class="top-bar">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Pesquisar música...">
+                <button id="search-button"><span class="fas fa-search"></span></button>
+            </div>
+            <div class="user-actions">
+                <button id="login-button">Login</button>
+                <button id="register-button">Registrar</button>
+            </div>
+        </div>
+
+        <!-- Área de conteúdo -->
+        <div class="content">
+            <h1>Bem-vindo ao Spotify Clone</h1>
+            <p>Pesquise suas músicas favoritas e aproveite!</p>
+
+            <div class="section">
+                <h2>Artistas Populares</h2>
+                <div class="artists-grid">
+                    <a href="" class="artist-circle">
+                        <img src="img/artistas/Bruno_Mars.jpeg" alt="Bruno Mars">
+                        <p>Bruno Mars</p>
+                        <span>Pop</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </a>
+                    <a href="" class="artist-circle">
+                        <img src="img/artistas/MC_Cabelinho.jpeg" alt="MC Cabelinho">
+                        <p>MC Cabelinho</p>
+                        <span>Funk</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </a>
+                    <a href="" class="artist-circle">
+                        <img src="img/artistas/Tupac.jpeg" alt="Tupac">
+                        <p>Tupac</p>
+                        <span>Hip-Hop</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Tabela de Álbuns Mais Tocados -->
+            <div class="section">
+                <h2>Singles e álbuns que todo mundo gosta</h2>
+                <div class="albums-grid">
+                    <div class="album-square">
+                        <img src="img/albuns/KAARIS_Or_Noir.jpeg" alt="KAARIS Or Noir">
+                        <p>KAARIS Or Noir</p>
+                        <span>Artista 1</span>
+                        <span class="plays">1B reproduções</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                    <div class="album-square">
+                        <img src="img/albuns/Racionais_Mc's.jpeg" alt="Racionais Mc's">
+                        <p>Racionais Mc's</p>
+                        <span>Artista 2</span>
+                        <span class="plays">900M reproduções</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                    <div class="album-square">
+                        <img src="img/albuns/Sabotage.jpeg" alt="Sabotage">
+                        <p>Sabotage</p>
+                        <span>Artista 3</span>
+                        <span class="plays">800M reproduções</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela de Estações de Rádio Mais Populares -->
+            <div class="section">
+                <h2>Estações de rádio mais populares</h2>
+                <div class="albums-grid">
+                    <div class="album-square">
+                        <img src="img/radios/Hot_97.jpeg" alt="Hot_97">
+                        <p>Estação Pop Hits</p>
+                        <span>Músicas pop para animar seu dia</span>
+                        <span class="plays">500M ouvintes</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                    <div class="album-square">
+                        <img src="img/radios/power.jpeg" alt="Power">
+                        <p>Estação Rock Classics</p>
+                        <span>Os maiores clássicos do rock</span>
+                        <span class="plays">450M ouvintes</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                    <div class="album-square">
+                        <img src="img/radios/Radio_Jovem_Pan.jpeg" alt="Jovem_pan">
+                        <p>Estação Hip-Hop Nation</p>
+                        <span>As batidas mais quentes do hip-hop</span>
+                        <span class="plays">400M ouvintes</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela de Paradas em Destaque -->
+            <div class="section">
+                <h2>Paradas em destaque</h2>
+                <div class="albums-grid">
+                    <div class="album-square">
+                        <img src="img/paradas/anos_80.jpeg" alt="anos_80">
+                        <p>Top 50 Global</p>
+                        <span>As músicas mais tocadas no mundo</span>
+                        <span class="plays">1B reproduções</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                    <div class="album-square">
+                        <img src="img/paradas/musicas_sertanejas.jpeg" alt="Sertanejo">
+                        <p>Top Brasil</p>
+                        <span>As músicas mais tocadas no Brasil</span>
+                        <span class="plays">900M reproduções</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                    <div class="album-square">
+                        <img src="img/paradas/set_funk.jpeg" alt="Funk">
+                        <p>Viral Hits</p>
+                        <span>As músicas virais do momento</span>
+                        <span class="plays">800M reproduções</span>
+                        <button class="play-button"><span class="fas fa-play"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards de músicas -->
+            <div class="music-cards" id="music-cards"></div>
+        </div>
+    </div>
+
+    <!-- Player de música -->
+    <div class="player" id="player" style="display: none;">
+        <div class="player-controls">
+            <button id="prev-button"><span class="fas fa-backward"></span></button>
+            <button id="play-button"><span class="fas fa-play"></span></button>
+            <button id="next-button"><span class="fas fa-forward"></span></button>
+        </div>
+        <div class="player-info">
+            <p id="now-playing">Nenhuma música tocando</p>
+        </div>
+        <button id="hide-player-button" style="margin-top: 10px;">Ocultar</button>
+    </div>
+
+    <!-- Modal de Login -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Entrar</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Usuário" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inscreva-se</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Usuário" required>
+                <input type="password" id="register-password" placeholder="Senha" required>
+                <input type="password" id="confirm-password" placeholder="Confirmar Senha" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
