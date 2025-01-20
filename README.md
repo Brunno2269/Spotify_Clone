@@ -1,3 +1,5 @@
+![Captura de tela de 2025-01-20 16-45-57](https://github.com/user-attachments/assets/d4915a5c-83b4-4e8e-aeb8-b9db88e1bb9a)
+
 # Spotify Clone
 
 Um clone do Spotify desenvolvido com HTML, CSS e JavaScript. Este projeto simula a interface do Spotify, permitindo que os usuários explorem artistas populares, álbuns, estações de rádio e paradas em destaque. Além disso, inclui um player de música funcional e modais de login e registro.
